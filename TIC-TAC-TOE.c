@@ -721,7 +721,6 @@ void display_turns(char game[],int CPUfirst,int level)/// Displaying turns
      char choice_history[9]={'0'};
     int turn_n=1;
     int game_over=0;
-    char playAgain;
 
     int main(void);// declaring main function
 // two player-------------
@@ -807,23 +806,6 @@ void display_turns(char game[],int CPUfirst,int level)/// Displaying turns
         {
             printf("\n\n\n\t --YOU LOSE --\n\n");
         }
-    }
-
-
-    printf(" 1. Play again");
-    printf("\n 2. Exit \n");
-    printf("\n enter your choice : ");
-    scanf(" %c",&playAgain);
-    while(playAgain<'1'||playAgain>'2')
-    {
-        printf("invalid entry! try again : ");
-        scanf(" %c",&playAgain);
-    }
-
-    if(playAgain=='1')
-    {
-        system("cls");
-        main();
     }
 
     return;
